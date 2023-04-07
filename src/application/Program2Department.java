@@ -28,17 +28,17 @@ public class Program2Department {
             System.out.println(obj);
         }
 
-//        System.out.println("\n=== Test 4: Seller insert ===");
-//        Seller newSeller = new Seller(null, "Greg", "greg@gmail.com", new Date(), 4000.0, department);
-//        sellerDao.insert(newSeller);
-//        System.out.println("Inserted! new ID = " + newSeller.getId());
-//
-//        System.out.println("\n=== Test 5: Seller Update ===");
-//        seller = sellerDao.findById(1);
-//        seller.setName("Martha Waine");
-//        sellerDao.update(seller);
-//        System.out.println("Update completed!");
-//
+        System.out.println("\n=== Test 3: Department insert ===");
+        Department newDepartment = new Department(null, "IT");
+        departmentDao.insert(newDepartment);
+        System.out.println("Inserted! new ID = " + newDepartment.getId());
+
+        System.out.println("\n=== Test 4: Department Update ===");
+        department = departmentDao.findById(5);
+        department.setName("RH");
+        departmentDao.update(department);
+        System.out.println("Update completed!");
+
 //        System.out.println("\n=== Test 6: Seller Delete ===");
 //        System.out.println("Enter id for delete test: ");
 //        int id = sc.nextInt();
