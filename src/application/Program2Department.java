@@ -6,6 +6,7 @@ import model.dao.SellerDao;
 import model.entities.Department;
 import model.entities.Seller;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
@@ -19,19 +20,14 @@ public class Program2Department {
         Department department = departmentDao.findById(3);
         System.out.println(department);
 
-//        System.out.println("\n=== Test 2: Seller findByDepartment ===");
-//        Department department = new Department(2, null);
-//        List<Seller> list = sellerDao.findByDepartment(department);
-//        for(Seller obj : list) {
-//            System.out.println(obj);
-//        }
-//
-//        System.out.println("\n=== Test 3: Seller findAll ===");
-//        list = sellerDao.findAll();
-//        for(Seller obj : list) {
-//            System.out.println(obj);
-//        }
-//
+
+        System.out.println("\n=== Test 2: Department findAll ===");
+        List<Department> list = new ArrayList<>();
+        list = departmentDao.findAll();
+        for(Department obj : list) {
+            System.out.println(obj);
+        }
+
 //        System.out.println("\n=== Test 4: Seller insert ===");
 //        Seller newSeller = new Seller(null, "Greg", "greg@gmail.com", new Date(), 4000.0, department);
 //        sellerDao.insert(newSeller);
